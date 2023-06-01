@@ -1,8 +1,17 @@
-// 封装用户相关的接口
-import request from "@/utils/request";
+// 封装用户相关的请求模块
+import request from "@/utils/request.js"
 
-export function login(data) {
-  return request.post("/auth/login", data);
+export function getData() {
+  return request.get("posts")
 }
 
-export function fn() {}
+// 添加数据
+export function addData(data) {
+  return request.post("posts",data)
+}
+
+// 删除数据
+export function delData(id) {
+  return request.delete(`posts/${id}`)
+}
+

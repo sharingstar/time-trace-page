@@ -4,17 +4,12 @@
                 <textarea>什么是编程式导航？</textarea>
             </div>
             <div class="problemContent">
-                <textarea>描述</textarea>
+                <textarea ></textarea>
             </div>
         </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-            textarea1: '',
-        }
-    },
 }
 </script>
 <style scoped>

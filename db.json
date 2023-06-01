@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userContent": "什么是HTML5 History 模式？"
+    },
+    {
+      "id": 2,
+      "userContent": "如何创建一个本地服务器？"
+    },
+    {
+      "id": 3,
+      "userContent": "怎么在打包的时候排除体积比较大的依赖包？"
+    },
+    {
+      "id": 4,
+      "userContent": "怎么优化文件大小？"
+    },
+    {
+      "id": 5,
+      "userContent": "如何实现多语言切换功能？"
+    }
+  ]
+}

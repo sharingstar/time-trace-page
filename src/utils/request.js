@@ -2,20 +2,19 @@
 import axios from "axios";
 
 // 配置公共基地址
-axios.defaults.baseURL = "http://interview-api-t.itheima.net/";
+axios.defaults.baseURL = "http://localhost:3000";
 
-// 配置拦截器
-// 添加请求拦截器
-axios.interceptors.request.use(
-  (config) => config,
-  (error) => Promise.reject(error)
-);
+axios.interceptors.request.use(function (config) {
+  return config;
+}, function (error) {
+  return Promise.reject(error);
+});
 
-// 添加响应拦截器
-axios.interceptors.response.use(
-  (response) => response,
-  (error) => Promise.reject(error)
-);
+axios.interceptors.response.use(function (response) {
+  return response;
+}, function (error) {
+  return Promise.reject(error);
+});
 
 // 导出axios
 export default axios;
