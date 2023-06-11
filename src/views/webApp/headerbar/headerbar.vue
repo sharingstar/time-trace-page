@@ -41,7 +41,6 @@
     justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid#eaecef;
-    border-left: 1px solid#eaecef;
 }
 
 .headerbar .search .searchinput{

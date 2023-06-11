@@ -6,8 +6,9 @@
         </div>
         <ul class="questionList">
             <li v-for="item in dataList" :key="item.id">
-                <div>
-                    <span>{{ item.userContent }}</span>
+                <div class="questionContent">
+                    <div>{{ item.userContent }}</div>
+                    <div class="tags">{{ item.tag }}</div>
                 </div>
                 <div class="toolsIcon">
                     <el-dropdown @command="tools(item, $event)">
@@ -76,11 +77,11 @@ export default {
 }
 
 .addtask {
-    width: 650px;
+    width: 610px;
     position: fixed;
-    padding: 0px 10px 10px 10px;
     top: 50px;
     background-color: #fff;
+    margin: 0px 20px;
 }
 
 .usertaskdata {
@@ -120,5 +121,24 @@ export default {
 
 .Deletebtn {
     color: #ff4d4f;
+}
+.questionContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #9d9d9d;
+    position: absolute;
+    right: 30px;
 }
 </style>

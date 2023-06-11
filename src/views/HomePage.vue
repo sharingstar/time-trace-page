@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="save">获取数据</button>
+    <h1>问禅App</h1>
   </div>
 </template>
 <script>

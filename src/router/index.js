@@ -11,10 +11,13 @@ const routes = [
   {
     path: "/",
     component: () => import("@/views/HomePage.vue"),
+        // 重定向
+    redirect: "/wenChan101",
   },
   {
     path: "/wenChan101",
     component: () => import("@/views/wenChan101.vue"),
+    redirect: "/Introduction",
     children: [
       {
         path: '/Introduction',

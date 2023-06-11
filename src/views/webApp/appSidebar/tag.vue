@@ -32,7 +32,7 @@
       </div>
     </div>
 </template>
-<script>
+<script scoped>
   export default {
     data() {
       return {
@@ -86,19 +86,19 @@
           label: '📝 写作',
           children: [{
             id: 7,
-            label: '二级 3-1'
+            label: '📖 公众号'
           }, {
             id: 8,
-            label: '二级 3-2',
+            label: '🦀️ 文案',
             children: [{
              id: 11,
-              label: '三级 3-2-1'
+              label: "📚 书评"
             }, {
               id: 12,
-              label: '三级 3-2-2'
+              label: '😮 发言稿'
             }, {
               id: 13,
-              label: '三级 3-2-3'
+              label: '📺 新闻'
             }]
           }]
         }],

@@ -63,6 +63,9 @@
         <li @click="scrollTo('#management')" :class="{active: activeSection === 'management'}">帮用户管理生活中的一切</li>
         <li @click="scrollTo('#last')" :class="{active: activeSection === 'last'}">写在最后</li>
       </ul>
+      <div class="joinApp">
+        <button @click="$router.push('/webApp')">WebApp</button>
+      </div>
     </div>
   </div>
 </template>
@@ -182,5 +185,27 @@ export default {
 .ScrollBox .active {
   border-left: 2px solid #4772fa;
   color: #4772fa;
+}
+
+.joinApp{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+.joinApp button {
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.joinApp button:hover {
+  background-color:#3eaf7c;;
 }
 </style>

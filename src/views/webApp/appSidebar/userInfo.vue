@@ -12,7 +12,7 @@
         </div>
     </div>
 </template>
-<style>
+<style scoped>
 .header {
     width: 100%;
     height: 65px;
@@ -22,7 +22,7 @@
 }
 
 .userinfo {
-    width: 110px;
+    width: 120px;
     height: 40px;
     line-height: 40px;
     display: flex;
@@ -54,13 +54,15 @@
 }
 
 .userpro {
-    width: 25px;
-    height: 16px;
-    line-height: 16px;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     font-size: 12px;
-    color: #fff;
-    background-color: #ababae;
+    /* 缩小 */
+    transform: scale(0.8);
+    color: #f9f9f9;
+    background-color: #5f5f5f;
     border-radius: 2px;
 }
 
@@ -79,5 +81,13 @@
 
 .Switchbtn:hover {
     background-color: #f1f1f1;
+}
+
+.proicon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
 }
 </style>

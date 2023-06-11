@@ -26,55 +26,9 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div ref="hotmap" class="hotmap">
-
-            </div>
-            <div class="monthBox">
-                <span>三月</span>
-                <span>四月</span>
-                <span>五月</span>
-            </div>
-        </div>
     </div>
 </template>
 <script>
-import * as echarts from 'echarts';
-
-export default {
-    mounted() {
-        const myChart = echarts.init(this.$refs.hotmap);
-        myChart.setOption({
-            radar: {
-                // shape: 'circle',
-                indicator: [
-                    { name: '', max: 6500 },
-                    { name: '', max: 16000 },
-                    { name: '', max: 30000 },
-                    { name: '', max: 38000 },
-                    { name: '', max: 52000 },
-                    { name: '', max: 25000 }
-                ]
-            },
-            series: [
-                {
-                    name: 'Budget vs spending',
-                    type: 'radar',
-                    data: [
-                        {
-                            value: [4200, 3000, 20000, 35000, 50000, 18000],
-                            name: 'one'
-                        },
-                        {
-                            value: [5000, 14000, 28000, 26000, 42000, 21000],
-                            name: 'two'
-                        }
-                    ]
-                }
-            ]
-        });
-    }
-}
 </script>
 <style scoped>
 .stat {

@@ -14,6 +14,9 @@ Vue.use(ElementUI);
 import '../node_modules/bootstrap/dist/css/bootstrap-reboot.css'
 import '../node_modules/normalize.css'
 
+import mavonEditor from 'mavon-editor'  //引入mavon-editor 就是上面所安装的
+Vue.use(mavonEditor)  //让Vue使用mavonEditor
+
 // 导入自定义组件
 import components from "./components/index";
 Vue.use(components);
