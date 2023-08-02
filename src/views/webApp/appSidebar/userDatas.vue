@@ -6,7 +6,7 @@
                     456
                 </div>
                 <div class="type">
-                    MEMO
+                    ASK
                 </div>
             </div>
             <div class="Data">
@@ -19,10 +19,10 @@
             </div>
             <div class="Data">
                 <div class="number">
-                    544
+                    10
                 </div>
                 <div class="type">
-                    DAY
+                    TADAY
                 </div>
             </div>
         </div>

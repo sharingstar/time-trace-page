@@ -15,3 +15,7 @@ export function delData(id) {
   return request.delete(`posts/${id}`)
 }
 
+// 添加tag
+export function addTag(data) {
+  return request.post("tags",data)
+}
