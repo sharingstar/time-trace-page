@@ -80,6 +80,7 @@ export default {
   line-height: 30px;
   margin-bottom: 20px;
   color: rgba(25, 25, 25, 0.8);
+  font-size: 16px;
 }
 
 .pageBackground img {

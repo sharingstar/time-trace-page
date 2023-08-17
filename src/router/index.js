@@ -32,14 +32,6 @@ const routes = [
         path: "/userquesion",
         component: () => import("@/views/articles/pages/userquesion.vue"),
       },
-      {
-        path: "/one",
-        component: () => import("@/views/articles/pages/one.vue"),
-      },
-      {
-        path: "/two",
-        component: () => import("@/views/articles/pages/two.vue"),
-      },
     ],
   },
   {
