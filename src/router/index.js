@@ -5,37 +5,46 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/login",
-    component: () => import("@/views/UserLogin.vue"),
+    path: "/",
+    component: () => import("@/views/home.vue"),
   },
   {
-    path: "/",
-    component: () => import("@/views/HomePage.vue"),
-        // 重定向
-    redirect: "/wenChan101",
+    path: "/thanks",
+    component: () => import("@/views/thanks.vue"),
+  },
+  {
+    path: "/privacy",
+    component: () => import("@/views/privacy.vue"),
   },
   {
     path: "/wenChan101",
-    component: () => import("@/views/wenChan101.vue"),
-    redirect: "/Introduction",
+    component: () => import("@/views/articles/wenChan101.vue"),
     children: [
       {
-        path: '/Introduction',
-        component: () => import("@/views/sidebarLinks/Introduction.vue"),
+        path: "/Introduction",
+        component: () => import("@/views/articles/pages/Introduction.vue"),
       },
       {
-        path: '/Introduction102',
-        component: () => import("@/views/sidebarLinks/Introduction102.vue"),
+        path: "/Introduction102",
+        component: () => import("@/views/articles/pages/Introduction102.vue"),
       },
-    ]
-  },
-  {
-    path: "/webApp",
-    component: () => import("@/views/webApp/index.vue"),
+      {
+        path: "/userquesion",
+        component: () => import("@/views/articles/pages/userquesion.vue"),
+      },
+      {
+        path: "/one",
+        component: () => import("@/views/articles/pages/one.vue"),
+      },
+      {
+        path: "/two",
+        component: () => import("@/views/articles/pages/two.vue"),
+      },
+    ],
   },
   {
     path: "*",
-    component: () => import("@/views/NotFound.vue"),
+    component: () => import("@/views/404/NotFound.vue"),
   },
 ];
 
