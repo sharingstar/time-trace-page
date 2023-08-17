@@ -1,6 +1,6 @@
 <template>
   <div class="App">
-    <Header_dow class="header" />
+    <Header_dow class="header" :class="{white: isWhite}" />
     <div class="Banner">
       <div class="Banner-Content">
         <div class="Banner-Content-Title">
@@ -41,7 +41,7 @@
       <div class="value-line"></div>
     </div>
 
-    <div class="small-container">
+    <div class="record-container">
       <p class="h1">快速丰富的记录</p>
       <p class="h3">尤其是将时间分为不同的各个模块，在完成之后再做别的事，将大大提升我们的专注力</p>
       <img src="../img/home/record.png" />
@@ -78,14 +78,17 @@ export default {
   data() {
     return {
       isSmall: false,
+      isWhite: false,
     };
   },
   mounted() {
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener('scroll', this.updateHeaderBackground);
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener('scroll', this.updateHeaderBackground);
   },
   methods: {
     updateWindowDimensions() {
@@ -98,6 +101,10 @@ export default {
     clickProtocol(type) {
       console.log(type);
     },
+    updateHeaderBackground() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      this.isWhite = scrollTop > 0;
+    }
   },
 };
 </script>
@@ -106,5 +113,12 @@ export default {
 .header {
   background-color: transparent;
   border-bottom: 0px;
+}
+.header.white {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 </style>
