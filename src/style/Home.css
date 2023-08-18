@@ -129,8 +129,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 32vh;
-  max-width: 35vw;
+  height: 32vh;
+  width: 17vw;
 }
 
 .value-line {
