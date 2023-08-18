@@ -1,7 +1,7 @@
 <template>
     <div>
-        <Header_dow/>
-        <div class="TextContent">
+        <Header_dow />
+        <div class="TextContent" style="filter: url(#frosted); opacity: 0.7">
             <h1>Thank you for your order!</h1>
             <p>Thank you for your order! We will contact you as soon as possible.</p>
         </div>

@@ -77,6 +77,7 @@ export default {
     background-size: 493px;
     background-repeat:no-repeat;
     background-position-y:390px;
+    font-size: 16px;
 }
 
 .TextContent{

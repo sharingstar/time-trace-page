@@ -17,8 +17,9 @@ const routes = [
     component: () => import("@/views/privacy.vue"),
   },
   {
-    path: "/wenChan101",
-    component: () => import("@/views/articles/wenChan101.vue"),
+    path: "/help",
+    component: () => import("@/views/articles/help.vue"),
+    redirect: "/Introduction",
     children: [
       {
         path: "/Introduction",
