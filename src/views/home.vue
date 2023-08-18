@@ -149,6 +149,7 @@ export default {
   border-bottom: 0px;
 }
 .header.white {
-  background-color: rgba(255, 255, 255,0.5);
+  background-color: rgba(255, 255, 255);
+  backdrop-filter: blur(10px);
 }
 </style>

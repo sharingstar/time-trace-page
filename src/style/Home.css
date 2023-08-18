@@ -326,5 +326,11 @@ body {
     .value-items:last-child{
       margin-top: 40px;
     }
+    .record-container > img{
+      width: 100%;
+    }
+    .data-container > img{
+      width: 100%;
+    }
   }
 }
