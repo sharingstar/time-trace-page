@@ -295,8 +295,8 @@ body {
 
 /* 超小屏幕（手机，小于 576px） */
 @media (max-width: 768px) {
-  data-container > img{
-    width: 100%;
+  .data-container > img{
+    width: 100% !important;
   }
   .value-container > p{
     font-size: 30px;
@@ -353,7 +353,6 @@ body {
 .downloadapp p{
   font-size: 13px !important;
   width: 68px;
-  height: 30px;
 }
 
 .logo img{
