@@ -8,7 +8,7 @@
 
 .pagebox h1 {
   margin-bottom: 15px;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .pagebox h3 {
@@ -105,5 +105,59 @@
   margin-top: 30px;
   border-top: 1px solid #eaeaea;
   color: #1e60e5;
-font-weight: 500;
+  font-weight: 500;
+}
+
+.pagelink svg {
+  width: 20px;
+  height: 20px;
+  color: #1e60e5;
+  /* 垂直居中 */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* 超小屏幕（手机，小于 576px） */
+@media (max-width: 768px) {
+  .pagebox {
+    width: 100%;
+    transform: translateX(0px);
+    padding: 0px 24px;
+    padding-top: 86px;
+  }
+
+  .pagebox h1 {
+    margin-bottom: 10px;
+    font-size: 48px;
+  }
+
+  .pagebox h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+  }
+
+  .pagebox h3.active {
+    color: #4772fa;
+  }
+
+  .pagebox p {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: rgba(25, 25, 25, 0.8);
+    font-size: 14px;
+  }
+
+  .pageBackground img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .pagelink{
+    font-size: 14px;
+    font-weight: 500;
+  }
 }

@@ -2,7 +2,7 @@
   <div class="headerbar">
     <div class="logo">
       <img src="../img/logo.png" alt="logo" />
-      <span>时间印记</span>
+      <span>时间印迹</span>
     </div>
     <div class="downloadapp">
       <p>下载APP</p>
@@ -12,7 +12,7 @@
 <style scoped>
 .headerbar {
   width: 100%;
-  height: 70px;
+  height: 50px;
   padding: 15px 26px;
   display: flex;
   justify-content: space-between;
@@ -35,22 +35,15 @@
 }
 
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo img {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .logo span {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .downloadapp {
-  width: 110px;
-  height: 44px;
+  width: 80px;
+  height: 30px;
   background-color: #1e60e5;
   border-radius: 4px;
   color: #fff;
@@ -60,7 +53,17 @@
   cursor: pointer;
 }
 
+.downloadapp p{
+  font-size: 14px ;
+}
+
 .downloadapp:hover{
   background-color: #05389f;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo img {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 </style>

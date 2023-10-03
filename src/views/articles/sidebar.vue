@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" @click="setIndex">
+  <div v-if="isOpen"  class="sidebar" @click="setIndex">
     <ul class="sidebar-links">
       <li>
         <p>关于App</p>
@@ -83,6 +83,7 @@
   </div>
 </template>
 <script>
+import { mapState, mapActions } from 'vuex';
 export default {
   data(){
     return{
@@ -92,9 +93,11 @@ export default {
   computed:{
     jumpIndex(){
       return this.$store.getters.getsidebarindex
-    }
+    },
+    ...mapState('sidebar', ['isOpen'])
   },
   methods:{
+    ...mapActions('sidebar', ['toggleSidebar']),
     setIndex(e){
       console.log(e.target);
       
@@ -128,8 +131,9 @@ export default {
   height: 100vh;
   background-color: #fff;
   position: fixed;
-  top: 70px;
+  top: 60px;
   left: 0;
+  z-index: 999;
 }
 
 .sidebar-links {
@@ -172,4 +176,10 @@ export default {
   background-color: #1e60e5;
   border-radius: 6px;
 }
+
+
+@media (max-width: 768px) {
+
+}
+
 </style>

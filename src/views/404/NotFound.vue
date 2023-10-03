@@ -18,11 +18,6 @@ export default {
 };
 </script>
 <style scoped>
-@media screen and (min-width: 400px) and (max-width: 800px) {
-  .content {
-    background-color: red;
-  }
-}
 .content {
   width: 100%;
   height: 100%;

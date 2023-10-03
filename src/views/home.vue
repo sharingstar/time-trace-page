@@ -90,10 +90,12 @@
       <div class="protocol">
         <p @click="clickProtocol(1)">用户协议</p>
         <p @click="clickProtocol(2)">隐私政策</p>
-        <p @click="clickProtocol(3)">联系我们</p>
+        <p @click="clickProtocol(3)">教程与指引</p>
+        <p @click="clickProtocol(4)">联系我们</p>
       </div>
-      <img src="../img/home/header_logo.png"/>
+      <img src="../img/logo@2x.png"/>
       <p>记录专注，预见未来</p>
+      <!-- 网络备案 -->
       <div class="footer-line"></div>
       <img class="light-logo" src="../img/home/light_logo.png" />
     </div>
@@ -118,11 +120,13 @@ export default {
     },
     clickProtocol(type) {
       if(type == 1) {
-        this.$router.push("/useragreement");
+        this.$router.push("/");
       } else if(type == 2) {
         this.$router.push("/privacy");
       } else if(type == 3) {
-        this.$router.push("/contactus");
+        this.$router.push("/help");
+      } else if(type == 4) {
+        this.$router.push("/");
       }
     },
     handleScroll() {
@@ -149,7 +153,9 @@ export default {
   border-bottom: 0px;
 }
 .header.white {
-  background-color: rgba(255, 255, 255,0.5);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255,0.8);
+  /* backdrop-filter: blur(10px); */
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid #e3e3e3;
 }
 </style>

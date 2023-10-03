@@ -26,8 +26,13 @@
       现在当今世界所有人感受到的悲欢离合、爱恨情仇，将在将来不久（最多120年后）一切将灰飞烟灭。
     </p>
     <div class="pagelink">
-      <div @click="go('01')"><span></span> 关于我们</div>
-      <div @click="go('03')"><span></span> 为什么要做这个APP？</div>
+      <div @click="go('01')">
+        关于我们
+      </div>
+      <div @click="go('03')">
+        为什么要做这个APP？
+        <span></span>
+      </div>
     </div>
   </div>
 </template>

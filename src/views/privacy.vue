@@ -53,7 +53,7 @@
            <p>联系我们 </p>
            <p>如果您对本隐私政策有任何疑问或建议，请随时通过 hwangdev97@gmail.com 与我们联系。</p>
         </div>
-        <div class="footer">
+        <div class="Bottombar">
             <img src="../img/logo@2x.png" alt="">
             <p>记录专注，预见未来</p>
         </div>
@@ -96,19 +96,19 @@ h1 {
     line-height: 30px;
 }
 
-.footer {
+.Bottombar {
 margin-top: 234px;
 text-align: center;
 margin-bottom: 70px;
 
 }
 
-.footer img {
+.Bottombar img {
     width: 100px;
     height: 100px;
 }
 
-.footer p {
+.Bottombar p {
     color: #2C2E32;
     font-size: 14px;
     margin-top: 44px;
