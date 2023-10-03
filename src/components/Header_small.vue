@@ -20,19 +20,12 @@
     <div class="logo">
       <img src="../img/logo.png" alt="logo" />
     </div>
-    <div class="return">
+    <div class="return" @click="returnHome">
       <p>返回首页</p>
     </div>
   </div>
 </template>
 <script>
-// import { mapActions } from 'vuex';
-
-// export default {
-//   methods: {
-//     ...mapActions('sidebar', ['toggleSidebar']),
-//   }
-// };
 import { mapActions, mapState } from 'vuex';
 
 export default {
@@ -40,7 +33,10 @@ export default {
     ...mapState('sidebar', ['isOpen'])
   },
   methods: {
-    ...mapActions('sidebar', ['toggleSidebar'])
+    ...mapActions('sidebar', ['toggleSidebar']),
+    returnHome() {
+      this.$router.push('/');
+    }
   }
 };
 </script>

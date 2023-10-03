@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Hearder class="headerNav"></Hearder>
-    <Header_small class="headerNav_small"></Header_small>
+    <HeaderSmall class="headerNav_small"></HeaderSmall>
     <div class="sideBar">
       <sidebar class="sidebar"></sidebar>
     </div>
@@ -13,12 +13,12 @@
 <script>
 import sidebar from "./sidebar.vue";
 import Hearder from "../../components/Header.vue";
-import Header_small from "@/components/Header_small.vue";
+import HeaderSmall from "@/components/Header_small.vue";
 export default {
   components: {
     sidebar,
     Hearder,
-    Header_small,
+    HeaderSmall
   },
 };
 </script>

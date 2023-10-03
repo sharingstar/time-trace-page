@@ -131,7 +131,7 @@ export default {
   height: 100vh;
   background-color: #fff;
   position: fixed;
-  top: 60px;
+  top: 70px;
   left: 0;
   z-index: 999;
 }
@@ -179,7 +179,9 @@ export default {
 
 
 @media (max-width: 768px) {
-
+  .sidebar {
+    top: 60px !important;
+}
 }
 
 </style>
