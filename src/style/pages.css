@@ -23,10 +23,10 @@
 }
 
 .pagebox p {
-  line-height: 30px;
+  line-height: 28px !important;
   margin-bottom: 20px;
   color: rgba(25, 25, 25, 0.8);
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .pageBackground img {
@@ -117,6 +117,14 @@
   vertical-align: middle;
 }
 
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (max-width: 1199px) and (min-width: 768px) {
+}
 
 /* 超小屏幕（手机，小于 576px） */
 @media (max-width: 768px) {

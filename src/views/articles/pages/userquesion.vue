@@ -1,6 +1,6 @@
 <template>
   <div class="pagebox">
-    <h1>时间印记</h1>
+    <h1>常见问题</h1>
     <div class="pageBackground">
       <img src="../../../img/page1.png" alt="" />
     </div>

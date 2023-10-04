@@ -143,13 +143,14 @@ export default {
 }
 
 .sidebar-links > li {
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .sidebar-links li p {
-  font-size: 20px;
+  margin-bottom: 6px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .sidebarGroupItems {
@@ -159,16 +160,17 @@ export default {
 
 .sidebarGroupItems li a {
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 34px;
+  line-height: 34px;
   color: #2c2e32;
   text-decoration: none;
-  font-size: 16px;
-  padding-left: 20px;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
-.sidebarGroupItems li a:hover {
-  color: #1e60e5;
+.sidebarGroupItems li:hover {
+  background-color: #f4f4f4;
+  border-radius: 6px;
 }
 
 .active {
