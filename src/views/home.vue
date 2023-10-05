@@ -120,7 +120,7 @@ export default {
     },
     clickProtocol(type) {
       if(type == 1) {
-        this.$router.push("/");
+        this.$router.push("/UserAgreement");
       } else if(type == 2) {
         this.$router.push("/privacy");
       } else if(type == 3) {

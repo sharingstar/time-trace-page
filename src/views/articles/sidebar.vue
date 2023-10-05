@@ -117,9 +117,6 @@ export default {
       this.$store.commit('setSideBarIndex',newVal)
     }
   },
-  // beforeDestroy(){
-  //   this.$store.commit('setsidebarindex',this.index)
-  // }
 };
 </script>
 <style scoped>
