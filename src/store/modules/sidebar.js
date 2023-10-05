@@ -4,7 +4,6 @@ export default {
   namespaced: true,
   state: {
     isOpen: true,
-    isOpen: true
   },
   mutations: {
     toggleSidebarState(state) {
