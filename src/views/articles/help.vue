@@ -14,27 +14,35 @@
 import sidebar from "./sidebar.vue";
 import Hearder from "../../components/Header.vue";
 import HeaderSmall from "@/components/Header_small.vue";
+import {debounce} from '@/utils';
+import {mapMutations} from 'vuex';
 export default {
   components: {
     sidebar,
     Hearder,
     HeaderSmall
   },
+  data() {
+    return {
+      screenWidth: '', // screen width
+    }
+  },
+  mounted() {
+    window.addEventListener('resize',debounce(this.handleFolderSidebar,200))
+  },
+  methods:{
+    ...mapMutations('sidebar',['changeSideBarState']),
+    handleFolderSidebar(){
+      this.screenWidth = window.innerWidth;
+      if (this.screenWidth < 768) {
+        return this.changeSideBarState(false)
+      }else {
+        this.changeSideBarState(true)
+      }
+    }
+  }
+ 
 };
 </script>
 <style>
-@media (max-width: 768px) {
-  .container {
-    .headerNav {
-      display: none;
-    }
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    .headerNav_small {
-      display: none;
-    }
-  }
-}
 </style>
