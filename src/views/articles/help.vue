@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Hearder class="headerNav"></Hearder>
-    <HeaderSmall class="headerNav_small"></HeaderSmall>
+    <HeaderSmall class="headerNav_small"  v-show="screenWidth < 768" ></HeaderSmall>
     <div class="sideBar">
       <sidebar class="sidebar"></sidebar>
     </div>
@@ -24,11 +24,11 @@ export default {
   },
   data() {
     return {
-      screenWidth: '', // screen width
+      screenWidth: window.innerWidth
     }
   },
   mounted() {
-    window.addEventListener('resize',debounce(this.handleFolderSidebar,200))
+    window.addEventListener('resize',debounce(this.handleFolderSidebar,100))
   },
   methods:{
     ...mapMutations('sidebar',['changeSideBarState']),
@@ -45,4 +45,15 @@ export default {
 };
 </script>
 <style>
+@media (max-width: 767px) {
+  .HeaderSmall {
+    opacity: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .HeaderSmall{
+    opacity: 0 !important;
+  }
+}
 </style>

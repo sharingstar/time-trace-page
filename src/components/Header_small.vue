@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .headerbar {
   width: 100%;
-  height: 60px;
+  height: 70px;
   padding: 15px 26px;
   display: flex;
   justify-content: space-between;

@@ -179,7 +179,7 @@ export default {
 
 @media (max-width: 768px) {
   .sidebar {
-    top: 60px !important;
+    top: 70px !important;
 }
 }
 
