@@ -10,6 +10,9 @@ export default {
       // 修改 mutation 名称
       state.isOpen = !state.isOpen;
     },
+    changeSideBarState(state, status) {
+      state.isOpen = status
+    }
   },
   actions: {
     toggleSidebar({ commit }) {
