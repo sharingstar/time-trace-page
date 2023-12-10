@@ -38,9 +38,11 @@ body {
   font-size: 70px;
   font-weight: bold;
 }
-.Banner-Content-Title > span:nth-child(2) {
+.Banner-Content-Title .zhuanzhustyle{
   color: #1e60e5;
 }
+
+.Banner-Content-Title
 
 .Banner-Small-Title {
   font-size: 10vw;
@@ -55,8 +57,8 @@ body {
   font-size: 3vw;
 }
 .Banner-App {
-  width: 33vh;
-  height: 48vh;
+  width: 50vh;
+  height: 60vh;
   background-image: url(../img/home/banner_app.png);
   background-size: contain;
   background-position: bottom;

@@ -76,7 +76,8 @@ export default {
     background-image: url("../img/background.png");
     background-size: 493px;
     background-repeat:no-repeat;
-    background-position-y:390px;
+    background-position-y:100px;
+    background-attachment: fixed;
     font-size: 16px;
 }
 
@@ -99,19 +100,18 @@ h1 {
 .Bottombar {
 margin-top: 234px;
 text-align: center;
-margin-bottom: 70px;
+padding-bottom: 70px;
 
 }
 
 .Bottombar img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .Bottombar p {
     color: #2C2E32;
     font-size: 14px;
-    margin-top: 44px;
     font-weight: 600;
     color: #CDCDCD ;
 }
