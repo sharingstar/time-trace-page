@@ -87,7 +87,7 @@
       <div class="protocol">
         <p @click="clickProtocol(1)">用户协议</p>
         <p @click="clickProtocol(2)">隐私政策</p>
-        <p @click="clickProtocol(3)">教程与指引</p>
+        <p @click="clickProtocol(3),openNotify()">教程与指引</p>
         <p @click="clickProtocol(4)">联系我们</p>
       </div>
       <img src="../img/logo@2x.png" />
@@ -113,13 +113,18 @@ export default {
         "_blank"
       );
     },
+    openNotify(){
+      this.$notify.success({
+        title:'提示',
+        message:'页面正在开发中'
+      })
+    },
     clickProtocol(type) {
       if (type == 1) {
         this.$router.push("/UserAgreement");
       } else if (type == 2) {
         this.$router.push("/privacy");
       } else if (type == 3) {
-        this.$router.push("/help");
       } else if (type == 4) {
         this.contactUs();
       }
@@ -158,5 +163,9 @@ export default {
 
 .appstore {
   cursor: pointer
+}
+
+.dev{
+  color: aqua;
 }
 </style>
