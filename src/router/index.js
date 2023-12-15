@@ -21,6 +21,10 @@ const routes = [
     component: () => import("@/views/UserAgreement.vue"),
   },
   {
+    path: "/develop",
+    component: () => import("@/views/develop.vue"),
+  },
+  {
     path: "/help",
     component: () => import("@/views/articles/help.vue"),
     redirect: "/Introduction",

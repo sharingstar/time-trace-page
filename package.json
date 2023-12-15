@@ -8,7 +8,7 @@
     "serve": "json-server --watch db.json"
   },
   "dependencies": {
-    "element-ui": "^2.15.13",
+    "element-ui": "^2.15.14",
     "github-markdown-css": "^5.2.0",
     "markdown-it": "^13.0.1",
     "marked": "^4.0.2",

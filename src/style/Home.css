@@ -199,6 +199,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 999;
 }
 .footer > img:first-child {
   margin-top: 200px;
@@ -254,6 +255,7 @@ body {
   right: 0;
   bottom: 0;
   width: 36vw;
+  z-index: -1;
 }
 
 .h1 {

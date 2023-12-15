@@ -2,9 +2,9 @@
   <div class="headerbar">
     <div class="options" @click="toggleSidebar">
       <img
-        v-if="!isOpen"
+        v-if="isOpen"
         @click="toggleImage"
-        :src="isImageChanged ? '../../src/img/icon/icon_menu.png' : '../../src/img/icon/icon_menu.png'"
+        :src="!isImageChanged? 'src/img/icon/icon_x.png' : '../../src/img/icon/icon_menu.png'"
         class="icon"
       />
       <img

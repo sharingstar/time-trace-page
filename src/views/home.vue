@@ -121,9 +121,10 @@ export default {
       } else if (type == 3) {
         this.$router.push("/help");
       } else if (type == 4) {
-        this.$router.push("/");
+        this.contactUs();
       }
     },
+    contactUs() { window.location.href = "mailto:solovetime@163.com"},
     handleScroll() {
       const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
@@ -141,6 +142,8 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
 };
+
+
 </script>
 <style scoped>
 .header {

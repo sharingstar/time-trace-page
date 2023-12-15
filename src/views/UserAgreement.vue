@@ -117,6 +117,9 @@ export default {
   background-size: 493px;
   background-repeat: no-repeat;
   background-position-y: 390px;
+    background-position-y:100px;
+    background-attachment: fixed;
+    font-size: 16px;
   font-size: 16px;
 }
 
