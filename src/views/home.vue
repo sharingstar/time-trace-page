@@ -5,7 +5,10 @@
       <div class="Banner-Content">
         <div class="Banner-Content-Title">
           <p>
-            <span>记录</span><span class="zhuanzhustyle">专注</span>&nbsp&nbsp&nbsp&nbsp<span>预见未来</span>
+            <span>记录</span
+            ><span class="zhuanzhustyle">专注</span>&nbsp&nbsp&nbsp&nbsp<span
+              >预见未来</span
+            >
           </p>
         </div>
         <p>记录专注，回顾专注，认识自我，找回自我。知道时间都去哪了</p>
@@ -23,9 +26,7 @@
         <div class="value-item">
           <img src="../img/home/value2.png" />
           <p class="h2">有序工作与生活</p>
-          <p class="h3">
-            为工作和生活各自设立目标，多个事情在一起也变得有序
-          </p>
+          <p class="h3">为工作和生活各自设立目标，多个事情在一起也变得有序</p>
         </div>
         <div class="value-item">
           <img src="../img/home/value3.png" />
@@ -83,11 +84,15 @@
       <img src="../img/img_掌控回顾.png" />
     </div>
     <div class="footer">
-      <img src="../img/home/appStore.png" @click="downloadApp" class="appstore"/>
+      <img
+        src="../img/home/appStore.png"
+        @click="downloadApp"
+        class="appstore"
+      />
       <div class="protocol">
         <p @click="clickProtocol(1)">用户协议</p>
         <p @click="clickProtocol(2)">隐私政策</p>
-        <p @click="clickProtocol(3),openNotify()">教程与指引</p>
+        <p @click="clickProtocol(3), openNotify()">教程与指引</p>
         <p @click="clickProtocol(4)">联系我们</p>
       </div>
       <img src="../img/logo@2x.png" />
@@ -95,6 +100,9 @@
       <!-- 网络备案 -->
       <div class="footer-line"></div>
       <img class="light-logo" src="../img/home/light_logo.png" />
+      <div class="beian">
+          <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2023017727号-1</a>
+      </div>
     </div>
   </div>
 </template>
@@ -113,11 +121,11 @@ export default {
         "_blank"
       );
     },
-    openNotify(){
-      this.$notify.success({
-        title:'提示',
-        message:'页面正在开发中'
-      })
+    openNotify() {
+      this.$notify.warning({
+        title: "提示",
+        message: "页面正在开发中",
+      });
     },
     clickProtocol(type) {
       if (type == 1) {
@@ -129,7 +137,9 @@ export default {
         this.contactUs();
       }
     },
-    contactUs() { window.location.href = "mailto:solovetime@163.com"},
+    contactUs() {
+      window.location.href = "mailto:solovetime@163.com";
+    },
     handleScroll() {
       const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
@@ -147,8 +157,6 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
 };
-
-
 </script>
 <style scoped>
 .header {
@@ -162,10 +170,24 @@ export default {
 }
 
 .appstore {
-  cursor: pointer
+  cursor: pointer;
 }
 
-.dev{
+.dev {
   color: aqua;
+}
+
+.beian {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.beian a {
+  cursor: pointer;
+  color: #45474a;
+  display: inline-block;
+  line-height: 50px;
+  text-decoration: none;
 }
 </style>

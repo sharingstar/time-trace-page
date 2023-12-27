@@ -158,6 +158,11 @@ export default {
   padding-top: 100px;
 }
 
+h1 {
+  color: #2c2e32;
+  margin-bottom: 30px;
+}
+
 h2 {
   color: #2c2e32;
   margin-bottom: 10px;
@@ -194,7 +199,7 @@ h3 {
   font-size: 14px;
   margin-top: 10px;
   font-weight: 600;
-  color: #cdcdcd;
+  color: #72767d;
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */

@@ -100,7 +100,7 @@ export default {
 
 .TextContent {
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   padding-top: 100px;
 }
 
@@ -143,7 +143,7 @@ h3 {
   color: #2c2e32;
   font-size: 14px;
   font-weight: 600;
-  color: #cdcdcd;
+  color: #72767d;
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
