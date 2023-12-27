@@ -96,7 +96,6 @@
         <p @click="clickProtocol(4)">联系我们</p>
       </div>
       <img src="../img/logo@2x.png" />
-      <p>记录专注，预见未来</p>
       <!-- 网络备案 -->
       <div class="footer-line"></div>
       <img class="light-logo" src="../img/home/light_logo.png" />
@@ -189,5 +188,6 @@ export default {
   display: inline-block;
   line-height: 50px;
   text-decoration: none;
+  font-size: 12px;
 }
 </style>
