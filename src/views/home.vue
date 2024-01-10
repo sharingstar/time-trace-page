@@ -74,7 +74,7 @@
       <p class="h3">
         专注的时间和日记等可快速记录，每一次的动作也将在「记录」里同步，每一天是怎么度过的清晰可
       </p>
-      <img src="../img/home/record.png" />
+      <img src="../img/home/img_快速记录.png" />
     </div>
     <div class="data-container">
       <p class="h1">回顾掌控时间</p>
