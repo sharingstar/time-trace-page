@@ -77,4 +77,11 @@ export default {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+@media (max-width: 768px) {
+  .downloadapp:hover {
+    background-color: #1e60e5;
+}
+}
 </style>
